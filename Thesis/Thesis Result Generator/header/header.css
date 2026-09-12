@@ -1,0 +1,46 @@
+#header{
+	
+	display:block;
+	background-color:white;
+	height:45px;
+	width:100%;
+	border-bottom:10px solid #630031;
+	border-top:10px solid #630031;
+	font-family: 'Kaushan Script', cursive;
+	font-size:25px;
+	text-align:center;
+	color:black;
+}
+#header p{
+		margin-top:5px;
+		margin-left:129px;
+}
+#header_below{
+	display:block;
+	background-color:black;
+	height:57px;
+	width:100%;
+	border-bottom:10px solid #630031;
+	float:left;
+	
+}
+#header_below a img{
+	margin-left:284px;
+	height:221%;
+	width:150px;
+	margin-top:-64px;
+	float:left;
+	box-shadow: 2px 2px 2px 2px #af9d8a;
+}
+#header_below p{
+	color:white;
+	font-family: 'Dancing Script', cursive;
+	font-style:italic;
+	font-weight:bold;
+	text-align:center;
+	font-size:25px;
+    float:left;
+	margin-left:19px;
+	margin-bottom:500px;
+	margin-top:7px;
+}

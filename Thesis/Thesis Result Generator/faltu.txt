@@ -1,0 +1,97 @@
+Test 1:
+session_start();
+	if(isset($_POST['Submit']))
+	{
+		
+	include 'dbConn.php';
+		$id = $_POST['id'];
+		$password = $_POST['password'];
+		
+		if(empty($id) || empty($password))
+		{
+		header("Location: ../index.php?error=emptyfields");
+		exit();
+		}
+		
+		else{
+			$sql = "SELECT * FROM login WHERE id = '$id' AND passwords = '$password';";
+			$stmt = mysqli_stmt_init($conn);
+			
+			if(!mysqli_stmt_prepare($stmt, $sql))
+			{
+				header("Location: ../index.php?error=sqlerror");
+		exit();
+			}
+			else{
+			mysqli_stmt_bind_param($stmt, "s", $id);
+			mysqli_stmt_execute($stmt);
+			$result = mysqli_stmt_get_result($stmt);
+			
+			if($row = mysqli_fetch_assoc($result))
+			{
+				$pwdCheck = password_verify($password, $row['passwords']);
+				if($pwdCheck == false)
+				{
+			header("Location: ../index.php?error=wrongpassword");
+		exit();
+				}
+				else if($pwdCheck == true)
+				{
+				session_start();
+				$_SESSION['userid'] = $row['id'];
+				$_SESSION['userdeg'] = $row['designation'];
+				
+				header("Location: ../includes/admin.options.php?login=success");
+		exit();
+				}
+				else{
+				header("Location: ../index.php?error=wrongpassword");
+		exit();
+				}
+			}
+			else{
+			header("Location: ../index.php?error=nouser");
+		exit();
+			}
+			
+			}
+			
+		}
+	}
+	else{
+		header("Location: ../index.php");
+		exit();
+	}
+
+
+
+Test2:
+<?php
+	session_start();
+	include 'dbConn.php';
+	
+	if(isset($_POST['Submit']))
+	{
+		$id = $_POST['id'];
+		$password = $_POST['password'];
+		
+		$sql = mysqli_query($conn,"SELECT * FROM users WHERE id = '$id' AND passwords = '$password'");
+		if(mysqli_num_rows($sql)==0)
+		{
+	echo "<script>alert(id and password don't match);document.location.href='index.php'</script>";
+		}
+		else
+		{
+	$row = mysqli_fetch_assoc($sql);
+	$_SESSION['id'] = $row['id'];
+	$_SESSION['designation'] = $row['designation'];
+	
+	if($row['designation']=="admin")
+	{
+echo "<script>alert('Welcome admin');document.location.href='admin.options.php'</script>";
+	}
+	
+		}
+	}
+	?>
+

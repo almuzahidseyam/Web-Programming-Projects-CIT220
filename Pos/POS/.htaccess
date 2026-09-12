@@ -1,0 +1,6 @@
+Options All -Indexes
+
+RewriteEngine On
+
+RewriteRule ^([-a-zA-z0-9_]+)$ index.php?route=$1
+RewriteRule ^([-a-zA-z0-9_]+)/$ index.php?route=$1

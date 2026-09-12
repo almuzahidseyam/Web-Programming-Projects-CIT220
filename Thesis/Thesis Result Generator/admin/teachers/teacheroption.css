@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+@import url("https://fonts.googleapis.com/css?family=Jomolhari&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Dancing+Script|Great+Vibes|Jomolhari|Kaushan+Script|Pacifico|Sacramento|ZCOOL+XiaoWei&display=swap");
+
+#header {
+  display: block;
+  background-color: white;
+  height: 45px;
+  width: 100%;
+  border-bottom: 10px solid #630031;
+  border-top: 10px solid #630031;
+  font-family: "Kaushan Script", cursive;
+  font-size: 25px;
+  text-align: center;
+  color: black;
+}
+#header p {
+  margin-top: 5px;
+}
+#header_below {
+  display: block;
+  background-color: black;
+  height: 57px;
+  width: 100%;
+  border-bottom: 10px solid #630031;
+  float: left;
+}
+#header_below a img {
+  margin-left: 290px;
+  height: 221%;
+  width: 150px;
+  margin-top: -64px;
+  float: left;
+  box-shadow: 2px 2px 2px 2px #af9d8a;
+}
+#header_below p {
+  color: white;
+  font-family: "Dancing Script", cursive;
+  font-style: italic;
+  font-weight: bold;
+  text-align: center;
+  font-size: 25px;
+  float: left;
+  margin-left: 19px;
+  margin-bottom: 500px;
+  margin-top: 7px;
+}
+
+body {
+  background-color: #00173f;
+}
+.teacheroption {
+  background-color: #630031;
+  height: 50px;
+  width: 310px;
+  margin-top: 130px;
+  margin-left: 570px;
+  font-weight: bold;
+  font-style: italic;
+  border: 5px solid #630031;
+  border-radius: 10px;
+  color: white;
+}
+
+.teacheroption p {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 12px;
+}
+
+.Teacherinfo1 {
+  height:50px;
+  width:350px;
+  font-size: 20px;
+  background-color: #630031;
+  margin-left:560px;
+  margin-top:100px;
+  border-radius:5px;
+  border:2px solid #630031;
+  color:white;
+}
+.Teacherinfo2 {
+  height:50px;
+  width:350px;
+  font-size: 20px;
+  background-color: #630031;
+  margin-left:560px;
+  margin-top:-21px;
+  border-radius:5px;
+  border:2px solid #630031;
+  color:white;
+}
+input[type='submit']:hover{
+	background-color:#800000;
+	color:black;
+}

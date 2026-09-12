@@ -1,0 +1,5 @@
+﻿# Ignored files
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini

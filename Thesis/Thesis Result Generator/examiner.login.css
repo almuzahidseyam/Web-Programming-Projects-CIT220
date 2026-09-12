@@ -1,0 +1,146 @@
+*{margin:0;padding:0}
+@import url('https://fonts.googleapis.com/css?family=Jomolhari&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script|Great+Vibes|Jomolhari|Kaushan+Script|Pacifico|Sacramento|ZCOOL+XiaoWei&display=swap');
+
+body{
+background-color:#00173F;
+
+}
+
+
+#admin{
+	background-color:#103217;
+	height:50px;
+	width:310px;
+	margin-top:195px;
+	margin-left:235px;
+	margin-bottom:30px;
+	font-weight:bold;
+	font-style:italic;
+	border : 5px solid #103217;
+	border-radius:10px;
+	color:white;
+	
+}
+#admin p{
+	text-align: center; 
+	font-size : 20px;
+	font-weight : bold; 
+	margin-top : 12px;
+}
+
+#teacher{
+	background-color:#630031;
+	height:50px;
+	width:310px;
+	margin-top:13px;
+	margin-left:235px;
+	border:5px solid white;
+	font-weight:bold;
+	font-style:italic;
+	border : 5px solid #030521 ;
+	border-radius:10px;
+	color:white;
+	box-shadow:0 10px 6px -2px  #030521;
+	
+}
+.link{
+text-decoration:none;	
+}
+#admin:hover{
+	background-color:#C70039
+;
+	height:55px;
+	margin-left:240px;
+
+}
+#teacher:hover{
+	background-color:#C70039
+;
+	height:55px;
+	margin-left:240px;
+}
+#teacher p{
+	text-align: center; 
+	font-size : 20px;
+	font-weight : bold; 
+	margin-top : 12px;
+}
+.loginCommand{
+	background-color:#630031;
+	height:50px;
+	width:310px;
+	margin-top:-213px;
+	margin-left:645px;
+	font-weight:bold;
+	font-style:italic;
+	border : 5px solid #630031;
+	border-radius:10px;
+	color:white;
+}
+.loginCommand p{
+	text-align: center; 
+	font-size : 20px;
+	font-weight : bold; 
+	margin-top : 12px;
+}
+#form{
+	margin-left : 575px;
+	margin-top : 8px;
+	height : 280px;
+	width : 450px;
+	background-color : #630031;
+	border : 5px solid #030521 ;
+	border-radius : 5px 5px 5px 5px;
+	box-shadow:0 10px 6px -2px  #030521;
+	
+}
+#login
+{
+	margin-left:108px;
+	margin-top:30px;
+}
+.form-text{
+	font-family : Jomolhari;
+	font-weight : bold;
+	color : white;
+	font-size : 20px;
+}
+input[type=text],input[type=password]
+{
+	width:265px;
+	height:40px;
+	border:2px solid black;
+	border-radius:5px;
+	text-align:left;
+	border : 2px solid black;
+	color:black;
+}
+input[type=submit]{
+	margin-left:734px;
+	margin-top:20px;
+	//border : 4px solid black;
+	border-radius:10px;
+	height:50px;
+	width:140px;
+	background-color : #630031;
+	font-family : Jomolhari;
+	font-weight : bold;
+	font-size : 20px;
+	transition : all ease 0.5s;
+	color:white;
+	
+	
+}
+input[type=submit]:hover{
+	background-color:#00173F;
+}
+.errmsg{
+	color : red;
+	margin-left:575px;
+	margin-top:10px;
+	font-size:20px;
+	width:100%;
+	padding : 5px;
+}
+

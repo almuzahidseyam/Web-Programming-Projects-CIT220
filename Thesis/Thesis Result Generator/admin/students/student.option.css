@@ -1,0 +1,20 @@
+body {
+  background-color: #00173f;
+}
+.stdresult {
+  text-align: center;
+  margin-top: 200px;
+}
+.button {
+  background-color: #630031; /* Green */
+  border: none;
+  color: white;
+  padding: 20px 36px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  width: 296px;
+  height: 31px;
+  font-size: 20px;
+  font-weight: bold;
+}

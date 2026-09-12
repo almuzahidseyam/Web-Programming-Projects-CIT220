@@ -1,0 +1,46 @@
+*{margin:0;padding:0;}
+#header {
+	width: 100%;
+	height: 300px;
+	margin-top: 0px;
+	padding: 0px;
+	font-family: "Times New Roman", Times, serif;
+	background: url(../../Images/templatemo_header_bg.jpg) no-repeat;
+	margin-left:417px;
+}
+
+#header #titles {
+	width: 360px;
+	margin-left: 290px;
+	padding: 45px 0 0 0;
+	text-align: center;
+}
+
+#titles #title {
+	font-size: 30px;
+	color: #f9f886;
+	margin-left:-334px;
+	margin-top:-27px;
+	text-align:center;
+}
+
+#titles #logout {
+	margin-left:-340px;
+	margin-top:17px;
+}
+#submt{
+	border-radius:10px;
+	height:50px;
+	width:140px;
+	background-color : #630031;
+	font-family : Jomolhari;
+	font-weight : bold;
+	font-size : 20px;
+	transition : all ease 0.5s;
+	color:white;
+	
+	
+}
+#submt:hover{
+	background-color:#00173F;
+}

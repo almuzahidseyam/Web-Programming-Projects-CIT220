@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title> signup form</title> 
+	<style type="text/css">
+		
+		div#amarblock{  
+						width:350px;
+						
+						padding:10px; 
+					 }
+		div#input1 input{
+						padding-up:8px;
+						padding-bottom:8px;
+						margin-bottom:10px;
+						width:99%;
+						}
+		.signuptitle{ 
+						background:#03A9F4;
+						margin-bottom:10px;
+						
+						}
+		.signuptitle h2{
+						text-align:center; 
+						padding:10px;
+						margin:0px;
+						color:white;
+						font-family:arial black;
+					    }
+		.submitbutton input{
+								
+							background:#03A9F4;
+							padding:8px;
+							width:100%;
+							color:white;
+							font-family:arial black;
+							display:block;
+							text-align:center;
+							border : 1px solid #0a8eca;
+							border-radius:5px;
+							
+							
+							}
+		
+		
+	</style>
+	
+	
+</head>
+
+<body style="color:white;
+		background-color:#f4511e;">
+	<center>
+	<div id="amarblock">
+		
+		<div class="signuptitle"><h2>SIGNUP FORM</h2></div>
+		
+		
+		<form action="connect.php" method="post">
+		
+		<b> First Name</b>
+		<div id="input1" ><input type="text" placeholder="Enter your first name" name="firstName" /> </div>
+		
+		<b> Last Name</b>
+		<div id="input1"><input type="text" placeholder="Enter your last name" name="lastName"/> </div>
+		
+		<b>Email</b>
+		<div id="input1"><input type="text" placeholder="Enter your Email" name="email"/> </div>
+		
+		<b> Password</b>
+		<div id="input1"><input type="password" placeholder="Enter your Password" name="password" /> </div>
+		
+		<b>phone number </b>
+		<div id="input1"> <input value = "+880" name="number"/> </div>
+		
+		
+		<b> Gender </b> <br/>
+			<input name="gender" type = "radio" value="m"/> Male
+			<input name="gender" type = "radio" value="f"/> Female
+			<input name="gender" type = "radio" value="o"/> Other
+		<h3> You are a Robot </h3>
+					<input name="robot" type = "radio" value="y"/> Yes
+					<input name="robot" type = "radio" value="n"/> No
+			
+		<br/>		
+		<div class="submitbutton"> <input type="submit" value="SIGN UP"/> </div>
+		
+		</form>
+		
+		
+	</div>
+	
+	</center>
+</body>
+</html>

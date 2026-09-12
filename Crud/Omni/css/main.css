@@ -1,0 +1,382 @@
+body{
+    font: 15px/1.5 "Times New Roman", Times, serif;
+    padding:0;
+    margin:0;
+    background-color:#f4f4f4;
+  }
+  
+  /* Global */
+  .container{
+    width:80%;
+    margin:auto;
+    overflow:hidden;
+  }
+  
+  ul{
+    margin:0;
+    padding:0;
+  }
+  
+  .button_1{
+    height:38px;
+    background:#e8491d;
+    border:0;
+    padding-left: 40px;
+    padding-right:40px;
+    color:#ffffff;
+  }
+  .button_1:hover{
+      color:#ffffffd8;
+      background:#d46215;
+  }
+  
+  .dark{
+    padding:15px;
+    background:#35424a;
+    color:#ffffff;
+    margin-top:10px;
+    margin-bottom:10px;
+  }
+  
+  /* Header **/
+  header{
+    background:#35424a;
+    color:#ffffff;
+    padding-top:30px;
+    min-height:70px;
+  
+  }
+  
+  header a{
+    color:#ffffff;
+    text-decoration:none;
+    text-transform: uppercase;
+    font-size:16px;
+  }
+  
+  header li{
+    float:left;
+    display:inline;
+    padding: 0 20px 0 20px;
+  }
+  
+  header #branding{
+    float:left;
+  }
+  
+  header #branding h1{
+    margin:0;
+    size: 100px;
+  }
+  
+  header nav{
+    float:right;
+    margin-top:10px;
+  }
+  
+  header .highlight, header .current a{
+    color:#e8491d;
+    font-weight:bold;
+  }
+  
+  header a:hover{
+    color:#cccccc;
+    font-weight:bold;
+  }
+  
+  /* Showcase */
+  #showcase{
+    height:700px;
+    background:url('../image/showcase1.jpg') no-repeat ;
+    background-size: cover;
+    background-position:center;
+    text-align:center;
+    color:#ffffff;
+    opacity: 1;
+  }
+  .circles{
+    background:#cf8a2f;
+    margin-top:50px;
+    border-radius: 50%;
+    width:600px;
+    height: 600px;
+    text-align: center;
+    margin-left:330px;
+    
+  }
+  
+  #showcase h1{
+    color: #293039;
+    margin-top:0;
+    font-size:85px;
+    margin-top:0px;
+    margin-bottom:0px;
+    line-height: 90px;
+
+    padding:0;
+    border-radius: 50%;
+    
+  }
+  .head{
+    margin-top:300px;
+    background:#f0f0f0;
+    padding:0;
+    border-radius: 10%;
+  }
+  #showcase img{
+    width:100px;
+    text-align: center;
+    margin-top:100px;
+    margin-bottom: 30px;
+  }
+  
+  
+  #showcase p{
+    font-size:24px;
+    color:#2d2638;
+  }
+  
+  
+  /* Boxes */
+  #boxes{
+    margin-top:10px;
+    margin-left: 40px;
+    background: #a19a9a11;
+    text-align: center;
+  }
+  
+  #boxes .box{
+    float:left;
+    text-align: center;
+    width:25%;
+    padding:10px;
+    background: #ffffffb2;
+    margin: 10px 10px;
+  
+    
+  }
+  #boxes .box p{
+    text-align: center;
+  }
+  
+  #boxes .box img{
+    width:200px;
+    border-radius: 5%;
+  }
+  
+  /* Sidebar */
+  aside#sidebar{
+    float:right;
+    width:70%;
+    margin-top:10px;
+  }
+  
+  aside#sidebar .order input, aside#sidebar {
+    width:90%;
+    padding:10px;
+    margin-top: 10px;
+    margin-bottom:20px;
+  }
+  
+  
+  
+  
+  /* Services */
+  ul#services li{
+    list-style: none;
+    padding:20px;
+    border: #cccccc solid 1px;
+    margin-bottom:5px;
+    background:#e6e6e6;
+  }
+  .about{
+    margin: 0;
+    height: 700px;
+    background:url('../image/aboutus.jpg') no-repeat ;
+    background-size: cover;
+    background-color: #35424a;
+    color: white;
+    opacity: 0.8;
+    
+  }
+  .round{
+    width:50%;
+    background: #16171b;
+    height: 700px;
+    text-align: center;
+    float:left;
+    
+  }
+  .round p{
+    font-size: 19px;
+    color:#f9f5ff
+  }
+  
+  #about_h1{
+    margin:0;
+    padding-top: 280px;
+    text-align: center;
+    font-size: 60px;
+    color:#f17126;
+  }
+  .review{
+    text-align: center;
+  }
+  
+  .Give_review{
+    text-align: center;
+    color:#d46215;
+    border:5px solid #e2e2e2;
+  }
+  .Give_review input{
+
+  }
+  .review h1{
+    color:#d46215;
+    font-size: 60px;
+    margin-top: 80px;
+  }
+  .review_title{
+    margin-top:100px;
+    text-align:center;
+    font-size: 55px;
+    color:#d46215;
+    border-bottom: 1px solid #d46215;
+    border-radius: 70%;
+  }
+  .picture{
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .picture input{
+    padding:20px 40px;
+    border:1px solid #b4b4b4;
+    text-decoration: none;
+    color:#35424a;
+    background:#ffffff;
+  }
+  .name{
+    font-size: 20px;
+    font-weight: bold;
+    
+  }
+  .name input{
+    padding:10px 75px;
+    margin-left: 5px;
+  }
+  .feedback{
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .feedback label{
+    padding-bottom: 20px;
+  }
+  .feedback input{
+    margin-top: 80px;
+  }
+  .center{
+    margin:auto auto;
+  }
+  .findus{
+    height: 600px;
+    background: #35424a;
+    color:white;
+    margin:0;
+  }
+  .image{
+    float: left;
+    margin-top: 0px;
+    margin-left: 140px;
+  
+  }
+  .image img{
+    width: 600px;
+    height: 600px;
+  }
+  .findtext{
+    float:right;
+    text-align: center;
+    margin-top:0px;
+    margin-right: 200px;
+  }
+  .findtext h1{
+    margin-top: 80px;
+    color:#d46215;
+    font-size: 55px;
+  }
+  .findtext h3{
+    color:#d46215;
+    font-size: 20px;
+  }
+  .findtext h4{
+    font-size:20px;
+  }
+  
+.show{
+    float:left;
+    text-align: center;
+    width:25%;
+    padding:20px;
+    background: #f4f4f4;
+    margin: 20px;
+  
+}  
+.show img{
+    width:200px;
+    height: 200px;
+    border-radius: 50%;
+}
+.show h4{
+  color: #f17126;
+  font-size: 19px;
+  margin-bottom: 0px;
+}
+.show p{
+  font-size: 19px;
+  color:#414141;
+}
+  footer{
+    padding:20px;
+    margin-top:20px;
+    color:#35424a;
+    background-color:#f0f0f0;
+    text-align: center;
+  }
+
+
+  
+  /* Media Queries */
+  @media(max-width: 768px){
+    header #branding,
+    header nav,
+    header nav li,
+    #newsletter h1,
+    #newsletter form,
+    #boxes .box,
+    article#main-col,
+    aside#sidebar{
+      float:none;
+      text-align:center;
+      width:100%;
+    }
+  
+    header{
+      padding-bottom:20px;
+    }
+  
+    #showcase h1{
+      margin-top:180px;
+      font-size: 100px;
+    }
+  
+    #newsletter button, .quote button{
+      display:block;
+      width:100%;
+    }
+  
+    #newsletter form input[type="email"], .quote input, .quote textarea{
+      width:100%;
+      margin-bottom:5px;
+    }
+  }
+  

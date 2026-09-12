@@ -1,0 +1,8 @@
+Showcase :
+          backgroundofcircle : #df7a35
+          fontcolor: #293039 title Beechtown Bistro  p Serving Delicious Dishes Since 1999
+About:    backgroundcolor:#293039
+          maincolo: About the Bistro #e67c33
+
+What foodies say: font What Foodies Say color: #e67c33
+font-family: "Times New Roman", Times, serif;

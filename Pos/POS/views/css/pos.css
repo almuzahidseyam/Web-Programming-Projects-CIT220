@@ -1,0 +1,20 @@
+.login-page #back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: url(../img/template/danbo-1865610.jpg);
+    background-size: cover;
+    overflow: hidden;
+    z-index: -1;
+}
+#min, #max {
+    border: 1px solid #ced4da; border-radius: 0.25rem;height: calc(1.8125rem + 2px); padding: 0.25rem 0.5rem; font-size: 0.875rem; line-height: 1.5;
+}
+.btnEditCustomer, .btnDeleteCustomer, .btnEditProduct, .btnDeleteProduct {
+    padding: .375rem .5rem;
+}
+.input-group-text {
+    width: 2.7em;
+}

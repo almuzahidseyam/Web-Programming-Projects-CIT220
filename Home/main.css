@@ -1,0 +1,578 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    font-family: 'Galada';
+}
+/*##########################Navigation Menu#########################*/
+nav ul{
+    list-style-type: none;
+    display: none;
+}
+
+nav ul a{
+    display: block;
+    background: red;
+    padding: 20px;
+    font-size: 17px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color:blue;
+    /*transition: color 0.5s ease,background 0.5s ease,padding 0.5s ease;*/
+    
+}
+
+nav ul a:hover{
+    background: red;
+    color: red;
+    padding-left: 30px;
+}
+
+.nav-container img{
+    width: 100px;
+    align-self: center;
+}
+
+.nav-container{
+    padding: 0 20px;
+    background: #4787b3;
+    border-bottom: 3px solid grey;
+    display: flex;
+    justify-content: space-between;
+}
+.bar{
+    width: 30px;
+    height: 3px;
+    margin: 7px;
+    background: red;
+}
+.btn{
+    padding: 2px;
+    display: inline-block;
+    border:2px solid rgb(16, 75, 134);
+    align-self: center;
+}
+nav{
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
+/*########################## Adding responsiveness to navigation menu #########################*/
+
+@media screen and (min-width: 776px){
+    .nav-container .btn{
+        display: none;
+    }
+    nav ul{
+        display: flex!important;
+        flex-wrap: wrap;
+        float: right;
+        position: relative;
+        top: -80px;
+        left: 10px;
+    }
+    nav ul a{
+        background: transparent;
+        color: #fafcf3;
+        padding-left: 30px;
+    }
+    nav ul a:hover{
+        border-radius: 200px 5px 200px 10px;
+        background: red;
+        color: red;
+        padding-left: 20px;
+    }
+}
+@media screen and (min-width: 896px){
+    nav ul{
+        display: flex!important;
+        flex-wrap: wrap;
+        float: right;
+        position: relative;
+        top: -80px;
+    }
+    nav ul a{
+        color: red;
+        background: transparent;
+        padding-right: 40px;
+    }
+    nav ul a:hover{
+        border-radius: 200px 5px 200px 10px;
+        background: red;
+        color: blue;
+        padding-left: 20px;
+    }
+}
+@media screen and (min-width: 1096px){
+    nav ul{
+        display: flex!important;
+        flex-wrap: wrap;
+        float: right;
+        position: relative;
+        top: -80px;
+    }
+    nav ul a{
+        color: red;
+        background: transparent;
+        padding-right: 80px;
+    }
+    nav ul a:hover{
+        border-radius: 200px 5px 200px 10px;
+        background: blue;
+        color: black;
+        padding-left: 20px;
+    }
+}
+/*########################## Ending responsiveness to navigation menu #########################*/
+
+/*############## Image SLider ###################*/
+
+.imageSlider{
+    position: relative;
+    top: 100px;
+}
+
+body, #slider, .wrap, .slide-content{
+    margin: 0;
+    padding: 0;
+    
+    overflow-x: hidden;
+}
+.wrap{
+    position: relative;
+}
+.slide{
+    width: 100%;
+    height: 87vh;
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.slide1{
+    background-image: url('img1.jpg')
+}
+.slide2{
+    background-image: url('img2.jpg')
+}
+.slide3{
+    background-image: url('img3.jpg')
+}
+.slide4{
+	background-image: url('img4.jpg')
+}
+.slide5{
+	background-image: url('img5.jpg')
+}
+.slide6{
+	background-image: url('img6.jpg')
+}
+.slide7{
+	background-image: url('img7.jpg')
+}
+.slide8{
+	background-image: url('img8.jpg')
+}
+.slide9{
+	background-image: url('img9.jpg')
+}
+.slide10{
+	background-image: url('img10.jpg')
+}
+
+.arrow{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    margin-top: -50px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+#arrow-left{
+    border-width: 30px 40px 30px 0;
+    border-color: transparent #fff transparent transparent;
+    left: 0;
+    margin-left: 30px;
+}
+#arrow-right{
+    border-width: 30px 0px 30px 40px;
+    border-color: transparent transparent transparent #fff;
+    right: 0;
+    margin-right: 30px;
+}
+
+/*############## End of Image Slider ############*/
+
+/*########################## About Section ################*/
+.head-teacher{
+    min-height: 10vh;
+    padding: 100px 0;
+    /*background: url('img/headmaster/headmaster.jpg')center/cover fixed no-repeat;*/
+    background: #608bbd;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: default;
+}
+
+.head-teacher-speech{
+    color: #ebf6fa;
+    text-align: center;
+    padding: 10px 40px;
+}
+
+.head-teacher img{
+    width: 30%;
+    height: 10%;
+    border: 1px solid rgb(238, 148, 148);
+    border-radius: 50%;
+}
+hr{
+    width: 90%;
+    margin: auto;
+    background: #00f891
+}
+.head-teacher-speech h3{
+    font-size: 40px;
+    text-decoration: capitalize;
+}
+.head-teacher-speech p{
+    padding: 20px;
+    line-height: 2;
+    font-size: 130%;
+
+}
+
+/*###########Responsiveness###############*/
+@media screen and (min-width: 776px){
+    .head-teacher-speech{
+        max-width: 50%;
+        border-radius: 30px;
+    }
+    .head-teacher-speech p{
+        max-width: 70%;
+        margin: 0 auto;
+    }
+}
+
+
+/*########################## End of about section ########
+
+/*########################## About Section ################*/
+.history{
+    min-width: 90vw;
+    min-height: 10vh;
+    padding: 100px 0;
+    background:rgba(43, 57, 185, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+}
+
+.history-card{
+    
+    text-align: center;
+    padding: 60px 40px;
+}
+.history-card h3{
+    font-size: 40px;
+    text-decoration: capitalize;
+}
+.history-card p{
+    line-height: 2;
+    font-size:  130%;
+}
+
+/*###########Responsiveness###############*/
+@media screen and (min-width: 576px){
+    .history-card{
+        max-width: 50%;
+        /*border-radius: 30px;*/
+    }
+    .history-card p{
+        max-width: 70%;
+        /*margin: auto;*/
+    }
+}
+/*#############End of responsiveness to history section ############*/
+
+/*############################## Team Members #################*/
+#teacher{
+    padding: 40px 0;
+    background: #b5c2b7;
+}
+
+.teacher-member{
+    cursor: default;
+    text-align: center;
+    border: 1px solid #2e282a;
+    border-radius: 20px;
+    background: #f5f3f5;
+    color: rgb(6, 51, 51);
+    transition: background 2s ease;
+    margin: 70px 0;
+}
+.teacher-member:hover{
+    background: #00a7e1;
+    color: aliceblue;
+
+}
+.teacher-member img{
+    width: 200px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: -65px;
+}
+#teacher-center{
+    max-width: 90vw;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+.teacher-member h5{
+    margin: 10px 0;
+}
+.teacher-member hr{
+    width: 70%;
+    margin: 0 auto;
+    border: 1px solid #ffc914;
+}
+.teacher-member p{
+    line-height: 2;
+    margin: 10px;
+}
+.teacher-member-footer{
+    padding: 20px 0;
+    background: #073847;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display: fllex;
+    justify-content: space-around;
+}
+.teacher-member-footer .fa{
+    font-size: 30px;
+    color: #14ff7e;
+    transition: color 1s ease font-size 1s ease;
+}
+.teacher-member-footer .fa:hover{
+    cursor: pointer;
+    color: #ebd729;
+}
+/*############################## End of Team Members #################*/
+/*########### Adding responsiveness to team section #####################*/
+@media screen and (min-width: 576px){
+    #teacher-center{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 15px;
+    }
+}
+@media screen and (min-width: 992px){
+    #teacher-center{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+/*####################End of responsiveness to team section ##################*/
+
+/*################### Class six routine #####################*/
+
+.classSixRoutine{
+    width: 100%;
+    display: grid;
+    background: rgb(177, 177, 138);
+}
+.classSixRoutineTable{
+    background: rgba(12, 14, 134, 0.445);
+    text-align: center;
+    color: rgb(235, 240, 245);
+    font-size: 100%;
+}
+
+/*################### End of class six routine ##############*/
+
+
+
+/*##################### class ten routine #########################*/
+.classTenRoutine{
+    width: 100%;
+    display: grid;
+    background: rgb(177, 177, 138);
+}
+.classTenRoutineTable{
+    background: rgba(12, 14, 134, 0.445);
+    text-align: center;
+    color: rgb(235, 240, 245);
+    font-size: 100%;
+}
+/*##################### end of class ten routine #####################*/
+
+/*################# Contact #####################*/
+
+.contact{
+    min-height: 10vh;
+    padding: 100px 0;
+    background: rgb(202, 202, 235);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-card{
+    background: rgba(255,255,255,0.6);
+    text-align: center;
+    padding: 60px 40px;
+    border-radius: 20px;
+}
+.contact-card h3{
+    font-size: 40px;
+    color: #B22222;
+}
+.contact-card h4{
+    color: #B22222;
+}
+.contact-card h5{
+    color: #B22222;
+}
+
+
+/*###########Responsiveness###############*/
+@media screen and (min-width: 576px){
+    .history-card{
+        max-width: 50%;
+        border-radius: 30px;
+    }
+    .history-card p{
+        max-width: 70%;
+        margin: 0 auto;
+    }
+}
+/*#############End of responsiveness to history section ############*/
+
+/*################# Result #####################*/
+
+
+.result{
+    width: 100%;
+    display: grid;
+    background: rgb(138, 168, 177);
+}
+.result-table{
+    background: rgba(12, 14, 134, 0.445);
+    text-align: center;
+    color: rgb(235, 240, 245);
+    font-size: 100%;
+    border: 1px solid rgb(0, 255, 255);
+    border-radius: 20px;
+    width: 90%;
+    margin: auto;
+}
+caption{
+    font-size: 300%;
+}
+
+/*################# End of Result #####################*/
+/*################# Adding responsiveness #################*/
+@media screen and (max-width:690px){
+    caption{
+        font-size: 180%;
+    }
+}
+/*################# Registration Form ################*/
+h3{
+  font-family: Calibri; 
+  font-size: 25pt;         
+  font-style: normal; 
+  font-weight: bold; 
+  color:SlateBlue;
+  text-align: center; 
+  text-decoration: underline
+}
+
+table{
+  font-family: Calibri; 
+  color:white; 
+  font-size: 11pt; 
+  font-style: normal;
+  font-weight: bold;
+  text-align:; 
+  background-color: SlateBlue; 
+  border-collapse: collapse; 
+  border: 2px solid navy
+}
+table.inner{
+  border: 0px
+}
+/*################# End of Registration Form ################*/
+
+/*################# Footer #####################*/
+
+.footer{
+    padding-top: 20px;
+    width: 100vw;
+    background: rgb(67, 113, 240);
+    height: 40vh;
+    text-align: center;
+    border: 3px solid rgb(181, 181, 214);
+
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+
+    grid-template-areas: 
+        "e-links newspapers education-board"
+        "developer developer developer";
+}
+
+.footer ul{
+    list-style-type: none;
+}
+.footer ul a{
+    display: block;
+    text-decoration: none;
+    font-size: 120%;
+    padding: 2px;
+    background: transparent;
+    color: whitesmoke;
+}
+.footer ul a:hover{
+    background:  rgb(7, 30, 94);
+    border-radius: 30px 10px 30px 10px;
+}
+.e-links{
+    background: rgb(67, 113, 240);
+    grid-area: e-links;
+}
+.newspapers{
+    background:  rgb(67, 113, 240);
+    grid-area: newspapers;
+}
+.education-board{
+    background:  rgb(67, 113, 240);
+    grid-area: education-board;
+}
+.developer{
+    display: block;
+    /*background: rgb(0, 102, 255);*/
+    color: rgb(233, 239, 245);
+    grid-area: developer;
+    margin: auto;
+}
+.developer .fa{
+    color: rgb(9, 224, 135);
+    
+    justify-content: space-around;
+    font-size: 200%;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.developer .fa:hover{
+    cursor: pointer;
+    color: rgb(228, 225, 91);
+    transition: color 1s ease font-size 1s ease;
+}
+
+/*################# End of Footert #####################*/

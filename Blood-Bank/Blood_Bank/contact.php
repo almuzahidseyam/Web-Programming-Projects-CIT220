@@ -68,12 +68,11 @@
             <div class="col-md-4">
                 <h3 class='text-primary'>Contact Details</h3>
                 <p>
-                    Muhammad Al-Muzahid <br>Sher-E Bangla Hall-2, <br>
-					Patuakhali Science & Technology University,<br>
-					Dumki, Patuakhali.<br>
+                    Muhammad Al-Muzahid <br>BUET, <br>
+					DHAKA-1000<br>
                 </p>
                 <p><i class="fa fa-phone"></i> 
-                    <abbr title="Phone">Phone</abbr>: 01787455815</p>
+                    <abbr title="Phone">Phone</abbr>: 01571419998</p>
                 <p><i class="fa fa-envelope-o"></i> 
                     <abbr title="Email">Email</abbr>: <a href="#" >almuzahidseyam@gmail.com</a>
                 </p>
@@ -113,3 +112,4 @@
 </body>
 
 </html>
+

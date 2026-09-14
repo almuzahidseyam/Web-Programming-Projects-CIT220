@@ -68,14 +68,14 @@
             <div class="col-md-4">
                 <h3 class='text-primary'>Contact Details</h3>
                 <p>
-                    M M Jahid Hasan <br>Sher-E Bangla Hall-2, <br>
+                    Muhammad Al-Muzahid <br>Sher-E Bangla Hall-2, <br>
 					Patuakhali Science & Technology University,<br>
 					Dumki, Patuakhali.<br>
                 </p>
                 <p><i class="fa fa-phone"></i> 
                     <abbr title="Phone">Phone</abbr>: 01787455815</p>
                 <p><i class="fa fa-envelope-o"></i> 
-                    <abbr title="Email">Email</abbr>: <a href="#" >mmjahidhasan96@gmail.com</a>
+                    <abbr title="Email">Email</abbr>: <a href="#" >almuzahidseyam@gmail.com</a>
                 </p>
                 <p><i class="fa fa-clock-o"></i> 
                     <abbr title="Hours">Hours</abbr>: 24*7</p>

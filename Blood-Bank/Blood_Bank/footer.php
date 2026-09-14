@@ -1,5 +1,5 @@
 <footer>
-	<p class='text-center'>Copyright &copy; mmjahidhasan</p>
+	<p class='text-center'>Copyright &copy; Muhammad Al-Muzahid</p>
 </footer>
 <script src="js/jquery.js"></script>
 <script src="js/bootstrap.min.js"></script>

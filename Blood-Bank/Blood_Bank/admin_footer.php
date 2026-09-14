@@ -2,7 +2,7 @@
   <div class=" container-fluid">
     <div class="row">
       <div class="col-sm-12" >
-		<p align="center">Copyright &copy; mmjahidhasan</p>
+		<p align="center">Copyright &copy; Muhammad Al-Muzahid</p>
       </div>
     </div>
   </div>
